@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IncluQuery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./logo.png">
+</head>
+<body>
+    <!-- Fondo Animado -->
+    <div class="background">
+        <canvas id="animatedBackground"></canvas>
+    </div>
+
+    <!-- Encabezado Principal -->
+    <header>
+        <div class="header-content">
+            <img src="./logo.png" alt="Logo IncluQuery" class="logo animated-logo">
+            <h1 class="title">IncluQuery</h1>
+            <p class="slogan">Tu consulta, nuestra misión. Tu derecho, nuestra prioridad.</p>
+        </div>
+    </header>
+
+    <!-- Sección de Consulta -->
+    <main>
+        <div class="form-container">
+            <h2>Haz tu consulta</h2>
+            <form id="queryForm">
+                <input type="text" id="queryInput" placeholder="Escribe tu consulta aquí..." required>
+                <button type="submit">Consultar</button>
+            </form>
+        </div>
+
+        <!-- Contenedor de Respuesta -->
+        <div id="responseContainer">
+            <p id="responseText"></p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-divider"></div>
+        <p>&copy; 2024 IncluQuery. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
